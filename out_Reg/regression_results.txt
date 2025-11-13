@@ -1,0 +1,94 @@
+Regression Formula:
+HEADCOUNT ~ Institution + Fiscal.Year + Study.Level + Program.Name
+
+Model Summary:
+
+Call:
+lm(formula = formula, data = model_data)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-3670.9   -43.8   -22.7     4.3 28875.0 
+
+Coefficients:
+                                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                                     -109.4435    61.7990  -1.771 0.076571 .  
+InstitutionBrock                                 278.6008    26.2691  10.606  < 2e-16 ***
+InstitutionCarleton                               40.7402    15.9687   2.551 0.010735 *  
+InstitutionDominican                              38.0647    95.5107   0.399 0.690234    
+InstitutionGuelph                                391.9136    24.0958  16.265  < 2e-16 ***
+InstitutionHearst                                 -0.9686    40.3327  -0.024 0.980841    
+InstitutionLakehead                               25.9296    16.4812   1.573 0.115656    
+InstitutionLaurentian                              7.7030    16.1770   0.476 0.633955    
+InstitutionMcMaster                               48.2960    15.9059   3.036 0.002395 ** 
+InstitutionMetropolitan                          200.2994    18.8995  10.598  < 2e-16 ***
+InstitutionNipissing                               2.9057    17.1234   0.170 0.865254    
+InstitutionNOSMU                                  57.6263    59.1785   0.974 0.330172    
+InstitutionOCADU                                  88.9452    50.1449   1.774 0.076106 .  
+InstitutionOntario Tech                          105.6630    20.5207   5.149 2.62e-07 ***
+InstitutionOttawa                                 25.1020    15.3682   1.633 0.102393    
+InstitutionQueen's                               271.1650    21.1962  12.793  < 2e-16 ***
+InstitutionToronto                               459.8678    18.0435  25.487  < 2e-16 ***
+InstitutionTrent                                  10.8848    16.5457   0.658 0.510627    
+InstitutionUOF                                   -27.3143    91.7457  -0.298 0.765920    
+InstitutionWaterloo                               87.8422    16.3911   5.359 8.38e-08 ***
+InstitutionWestern                               370.2995    20.7453  17.850  < 2e-16 ***
+InstitutionWilfrid Laurier                        30.7437    16.1074   1.909 0.056308 .  
+InstitutionWindsor                                30.2574    16.1853   1.869 0.061566 .  
+InstitutionYork                                  307.2408    18.4478  16.655  < 2e-16 ***
+Fiscal.Year2013-2014                               0.2616     7.0169   0.037 0.970263    
+Fiscal.Year2014-2015                               2.1657     7.0279   0.308 0.757965    
+Fiscal.Year2015-2016                               4.2374     7.0220   0.603 0.546215    
+Fiscal.Year2016-2017                              -0.2231     6.6619  -0.033 0.973286    
+Fiscal.Year2017-2018                               8.3033     7.0528   1.177 0.239079    
+Fiscal.Year2018-2019                              11.7581     7.4317   1.582 0.113617    
+Fiscal.Year2019-2020                              20.4759     7.6942   2.661 0.007788 ** 
+Fiscal.Year2020-2021                              22.6287     7.7042   2.937 0.003313 ** 
+Fiscal.Year2021-2022                              24.7302     7.7447   3.193 0.001408 ** 
+Fiscal.Year2022-2023                              25.9430     7.7685   3.340 0.000840 ***
+Fiscal.Year2023-2024                              27.5970     7.7440   3.564 0.000366 ***
+Study.LevelUndergraduate                         105.8804     3.9405  26.870  < 2e-16 ***
+Program.NameBachelor of Arts                    3593.8729    81.5942  44.046  < 2e-16 ***
+Program.NameBachelor of Business Administration  796.2544    84.9113   9.377  < 2e-16 ***
+Program.NameBachelor of Commerce                1301.4402    87.6137  14.854  < 2e-16 ***
+Program.NameBachelor of Science                 1474.4215    81.5267  18.085  < 2e-16 ***
+Program.NameBachelor of Social Work               80.7225    83.3544   0.968 0.332835    
+Program.NameBiology                              187.3599    83.2338   2.251 0.024387 *  
+Program.NameChemical Engineering                 122.8861    86.1467   1.426 0.153735    
+Program.NameChemistry                             30.0493    80.3820   0.374 0.708530    
+Program.NameCivil Engineering                    124.4745    79.9180   1.558 0.119349    
+Program.NameComputer Science                     390.2336    77.9891   5.004 5.63e-07 ***
+Program.NameEconomics                             89.7795    80.8898   1.110 0.267045    
+Program.NameEnglish                               39.1999    83.8776   0.467 0.640253    
+Program.NameGeography                             -0.9126    81.4238  -0.011 0.991057    
+Program.NameHistory                               32.0900    80.6331   0.398 0.690649    
+Program.NameKinesiology                          313.5696    87.4363   3.586 0.000336 ***
+Program.NameMaster of Arts                        81.8582    85.4544   0.958 0.338107    
+Program.NameMaster of Business Administration     91.8486    83.5444   1.099 0.271597    
+Program.NameMaster of Education                  -41.2018    84.8755  -0.485 0.627367    
+Program.NameMaster of Public Health             -168.1606    86.8438  -1.936 0.052827 .  
+Program.NameMechanical Engineering               249.8419    81.4420   3.068 0.002158 ** 
+Program.NameMusic                               -163.7642    87.9083  -1.863 0.062480 .  
+Program.NameOTHER                                 20.0862    59.6441   0.337 0.736292    
+Program.NamePhilosophy                           -20.0984    79.9089  -0.252 0.801415    
+Program.NamePhysics                               -6.6490    87.8699  -0.076 0.939683    
+Program.NamePolitical Science                     80.1914    81.1531   0.988 0.323082    
+Program.NamePsychology                           246.4990    81.4330   3.027 0.002470 ** 
+Program.NameSocial Work                          124.9752    78.6034   1.590 0.111850    
+Program.NameSociology                             47.3122    79.6652   0.594 0.552588    
+Program.NameStatistics                           -27.3869    86.1228  -0.318 0.750487    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 461.2 on 92287 degrees of freedom
+Multiple R-squared:  0.1025,	Adjusted R-squared:  0.1019 
+F-statistic: 164.7 on 64 and 92287 DF,  p-value: < 2.2e-16
+
+
+Shapiro-Wilk Test:
+
+	Shapiro-Wilk normality test
+
+data:  residuals_sample
+W = 0.16047, p-value < 2.2e-16
+
