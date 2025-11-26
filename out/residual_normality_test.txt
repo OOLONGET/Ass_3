@@ -1,0 +1,8 @@
+Shapiro-Wilk 正态性检验（残差是否近似正态）
+
+
+	Shapiro-Wilk normality test
+
+data:  res
+W = 0.95792, p-value = 0.1979
+

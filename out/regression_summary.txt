@@ -1,0 +1,23 @@
+线性回归模型：Headcount ~ Year + GenderGroup
+
+
+Call:
+lm(formula = Headcount ~ Year + GenderGroup, data = df_model)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-5522.4 -1903.5  -183.6  1497.7  9440.9 
+
+Coefficients:
+                            Estimate Std. Error t value Pr(>|t|)    
+(Intercept)               -4313802.0   360449.4  -11.97 3.73e-13 ***
+Year                          2248.7      178.7   12.59 1.01e-13 ***
+GenderGroupMale             -48229.3     1471.3  -32.78  < 2e-16 ***
+GenderGroupN/A or Another  -220026.4     1506.1 -146.09  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3604 on 31 degrees of freedom
+Multiple R-squared:  0.9987,	Adjusted R-squared:  0.9985 
+F-statistic:  7771 on 3 and 31 DF,  p-value: < 2.2e-16
+
